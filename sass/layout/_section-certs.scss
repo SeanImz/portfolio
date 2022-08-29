@@ -1,0 +1,67 @@
+.section-certs {
+  &__contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-content: center;
+    justify-content: space-between;
+    gap: 4.8rem;
+    margin-bottom: 1px;
+
+    @media (max-width: 1260px) {
+      gap: 3.6rem;
+    }
+
+    @media (max-width: 1160px) {
+      gap: 2.4rem;
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+
+    @media (max-width: 750px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(10, 1fr);
+    }
+  }
+
+  &__item {
+    width: 100%;
+    padding: 2rem;
+    // background-color: $bgcolor-section;
+    background: $background-gradient2;
+    color: $color-primary-light;
+    border-radius: 1rem;
+    // box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+    box-shadow: $box-shadow-default;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: translateY(-1.2rem) scale(1.1);
+      box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  &__description,
+  &__date {
+    font-size: $default-font-size;
+  }
+
+  &__description {
+    line-height: 1.2;
+    padding-bottom: 2rem;
+  }
+
+  &__certificate {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+}

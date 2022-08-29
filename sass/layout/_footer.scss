@@ -1,0 +1,11 @@
+.footer {
+  background-color: #777;
+  padding: 3rem;
+}
+
+.footer__text {
+  font-size: $default-font-size;
+  text-align: center;
+
+  @include highlighted-link;
+}

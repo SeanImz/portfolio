@@ -1,0 +1,121 @@
+.section-skills {
+  &__contents {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3.2rem;
+
+    // @media (max-width: 900px) {
+    //   grid-template-columns: repeat(4, 1fr);
+    //   grid-template-rows: repeat(3, 1fr);
+    //   gap: 2.4rem;
+    // }
+
+    @media (max-width: 750px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(12, 1fr);
+    }
+  }
+
+  &__text-window-container {
+    grid-column: 2 / 6;
+    grid-row: 2 / 4;
+    display: flex;
+
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  &__text-window {
+    // grid-column: 2 / 6;
+    // grid-row: 2 / 4;
+    align-self: center;
+    height: 70%;
+    background-color: $bgcolor-section;
+    margin: 5rem 10rem;
+    padding: 5rem;
+    border-radius: 20px;
+    box-shadow: $box-shadow-default;
+
+    @media (max-width: 1050px) {
+      height: 80%;
+      margin: 2rem 4rem;
+      padding: 3rem;
+    }
+
+    @media (max-width: 900px) {
+      height: 90%;
+      margin: 1rem 2rem;
+      padding: 1rem;
+    }
+  }
+
+  &__title {
+    color: $color-secondary;
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin-bottom: 1.1rem;
+    opacity: 1;
+  }
+
+  &__text {
+    font-size: 2.4rem;
+    color: $color-primary-dark;
+  }
+
+  &__item-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    // padding: 1rem;
+    // border: solid 1px red;
+  }
+
+  &__item-container-blank {
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: $bgcolor-section;
+    font-size: 2.4rem;
+    opacity: 0.8;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 85%;
+    // border-radius: 12rem / 12rem;
+    border-radius: 50%;
+    box-shadow: $box-shadow-default;
+    transition: all 0.4s;
+
+    @media (max-width: 750px) {
+      width: 50%;
+    }
+
+    &:hover {
+      transform: translateY(-1.2rem) scale(1.05);
+      box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__image {
+    max-width: 80%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 5px;
+    object-fit: contain;
+
+    // @media (max-width: 1200px) {
+    //  max-width: 10rem;
+    // }
+  }
+
+  &__image-r {
+    border-radius: 30px;
+  }
+}

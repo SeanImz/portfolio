@@ -1,0 +1,274 @@
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  position: fixed;
+  top: 6rem;
+  right: 4rem;
+  margin-top: -45px;
+  width: 5rem;
+  height: 4.5rem;
+  z-index: 999;
+
+  @media (max-width: 500px) {
+    right: 2rem;
+  }
+}
+
+.hamburger div {
+  position: relative;
+  width: 5rem;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #7fffd4;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color-primary-highlight-hover;
+  }
+
+  @media (max-width: 500px) {
+    width: 4rem;
+    height: 6px;
+  }
+}
+
+/**
+Nav Styles
+**/
+.nav {
+  position: fixed;
+  width: 25vw;
+  height: 33vh;
+  background-color: $color-primary-dark;
+  top: -100%;
+  right: 0;
+  box-shadow: 0.4rem 0.4rem 0.8rem 0.2rem rgba(127, 255, 212, 0.5);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  z-index: 99;
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    height: 60vh;
+  }
+
+  @media (max-width: 900px) {
+    width: 33vw;
+  }
+
+  @media (max-width: 750px) {
+    width: 50vw;
+  }
+
+  @media (max-width: 500px) and (orientation: landscape) {
+    height: 90vh;
+  }
+
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  &__menu {
+    width: 50%;
+    margin: 4rem auto 0 auto;
+    text-align: center;
+    background-color: $color-primary-dark;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    &__list {
+      list-style: none;
+      font-size: 3.6rem;
+
+      @include highlighted-link;
+    }
+
+    &__item {
+      margin: 1rem 0 0.5rem 0;
+    }
+  }
+}
+// .nav-wrapper {
+//   position: relative;
+//   overflow: hidden;
+//   overflow-y: auto;
+//   height: 100%;
+// }
+// nav {
+//   text-align: left;
+//   margin-left: 25%;
+// }
+
+.nav-menu {
+  display: none;
+  width: 22rem;
+  height: 22rem;
+  text-align: center;
+  background-color: $color-primary-dark;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0.4rem 0.4rem 0.8rem 0.2rem rgba(127, 255, 212, 0.5);
+  transition: 0.4s;
+
+  &__list {
+    list-style: none;
+    font-size: 3.2rem;
+
+    @include highlighted-link;
+  }
+
+  &__item {
+    margin: 1rem 0 0.5rem 0;
+  }
+}
+
+// nav a {
+//   position: relative;
+//   text-decoration: none;
+//   color: $color-primary-highlight;
+//   list-style: none;
+//   font-size: 2em;
+//   display: inline-block;
+//   margin-top: 1.25em;
+//   transition: color 0.2s ease-in-out;
+//   letter-spacing: 1px;
+// }
+// nav a:before {
+//   content: "";
+//   height: 0;
+//   position: absolute;
+//   width: 0.25em;
+//   background-color: white;
+//   left: -0.5em;
+//   transition: all 0.2s ease-in-out;
+// }
+// nav a:hover {
+//   color: white;
+// }
+// nav a:hover:before {
+//   height: 100%;
+// }
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+// #menu-toggle {
+//   .menu-button-container {
+//     display: inline-block;
+//     cursor: pointer;
+//     grid-column: 2 / 3;
+//     grid-row: 1 / 2;
+//     position: fixed;
+//     top: 2rem;
+//     right: 3rem;
+//     z-index: 999;
+
+//     &:hover {
+//       opacity: 80%;
+//     }
+//   }
+
+//   .bar1,
+//   .bar2,
+//   .bar3 {
+//     width: 35px;
+//     height: 5px;
+//     background-color: $color-primary-highlight;
+//     margin: 6px 0;
+//     transition: 0.4s;
+//   }
+
+//   .nav-menu {
+//     display: none;
+//     width: 22rem;
+//     height: 22rem;
+//     text-align: center;
+//     background-color: $color-primary-dark;
+//     border-radius: 1rem;
+//     padding: 1rem;
+//     box-shadow: 0.4rem 0.4rem 0.8rem 0.2rem rgba(127, 255, 212, 0.5);
+//     transition: 0.4s;
+
+//     &__list {
+//       list-style: none;
+//       font-size: 3.2rem;
+
+//       @include highlighted-link;
+//     }
+
+//     &__item {
+//       margin: 1rem 0 0.5rem 0;
+//     }
+//   }
+// }
+
+// #menu-toggle:checked {
+//   .bar1 {
+//     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+//     transform: rotate(-45deg) translate(-9px, 6px);
+//     justify-self: end;
+//   }
+
+//   .bar2 {
+//     opacity: 0;
+//   }
+
+//   .bar3 {
+//     -webkit-transform: rotate(45deg) translate(-8px, -8px);
+//     transform: rotate(45deg) translate(-8px, -8px);
+//     justify-self: end;
+//   }
+
+//   .nav-menu {
+//     display: inline-block;
+//     transform-origin: right top;
+//   }
+// }
+
+// .change .bar1 {
+//   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+//   transform: rotate(-45deg) translate(-9px, 6px);
+//   justify-self: end;
+// }
+
+// .change .bar2 {
+//   opacity: 0;
+// }
+
+// .change .bar3 {
+//   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+//   transform: rotate(45deg) translate(-8px, -8px);
+//   justify-self: end;
+// }
+
+// .change .nav-menu {
+//   display: inline-block;
+//   transform-origin: right top;
+// }

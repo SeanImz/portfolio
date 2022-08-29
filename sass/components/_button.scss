@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  background-color: $color-primary-dark;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  &__link:link,
+  &__link:visited {
+    color: $color-primary-light;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: #fff;
+  }
+}
+
+.btn-contact {
+  font-size: 4.4rem;
+  color: $color-primary-highlight;
+
+  &:hover {
+    color: $color-primary-light;
+    cursor: pointer;
+  }
+}

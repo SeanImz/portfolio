@@ -1,0 +1,24 @@
+.sections {
+  height: clamp(100vh, auto);
+  padding: 3rem;
+  background: $background-gradient;
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    height: auto;
+  }
+
+  // @media (max-width: 1900px) {
+  //   height: auto;
+  // }
+
+  &__title {
+    color: $color-primary-light;
+    font-size: 3.2rem;
+    padding-bottom: 2.4rem;
+  }
+
+  &__subtitle {
+    color: $color-primary-light;
+    font-size: 2.4rem;
+  }
+}

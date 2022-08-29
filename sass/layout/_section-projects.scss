@@ -1,0 +1,180 @@
+.section-projects {
+  &__contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-content: center;
+    justify-content: space-between;
+    gap: 4.8rem;
+    margin-bottom: 1px;
+
+    @media (max-width: 1260px) {
+      gap: 3.6rem;
+    }
+
+    @media (max-width: 1160px) {
+      gap: 2.4rem;
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      // gap: 1.8rem;
+    }
+
+    @media (max-width: 750px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(12, 1fr);
+    }
+  }
+
+  &__item {
+    // width: 100%;
+    // padding: 2rem;
+    // background-color: $bgcolor-section;
+    // border-radius: 1rem;
+    // box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+
+    //FUNCTIONALITY
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 24rem;
+
+    @media (max-width: 900px) {
+      height: 20rem;
+    }
+
+    &__side {
+      height: 24rem;
+      padding: 2rem;
+      background: $background-gradient2;
+      color: $color-primary-light;
+      border-radius: 1rem;
+      box-shadow: $box-shadow-default;
+      transition: all 0.8s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+
+      @media (max-width: 900px) {
+        height: 20rem;
+      }
+
+      // &--front {
+      //   background-color: #fff;
+      // }
+
+      &--back {
+        transform: rotateX(180deg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.8;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-1 {
+          background-image: url(../img/screenshot-ttt.jpg);
+        }
+        &-2 {
+          background-image: url(../img/screenshot-polypterus.jpg);
+        }
+        &-3 {
+          background-image: url(../img/screenshot-wharf.jpg);
+        }
+        &-4 {
+          background-image: url(../img/screenshot-omnifood.jpg);
+        }
+        &-5 {
+          background-image: url(../img/screenshot-natours.jpg);
+        }
+        &-6 {
+          background-image: url(../img/screenshot-trillo.jpg);
+        }
+        &-7 {
+          background-image: url(../img/screenshot-nexter.jpg);
+        }
+        &-8 {
+          background-image: url(../img/screenshot-escapes.jpg);
+        }
+        &-9 {
+          background-image: url(../img/screenshot-animated_template.jpg);
+        }
+        &-10 {
+          background-image: url(../img/screenshot-light_dark_mode.jpg);
+        }
+        &-11 {
+          background-image: url(../img/screenshot-quote_gen.jpg);
+        }
+        &-12 {
+          background-image: url(../img/screenshot-exotic-garden.jpg);
+        }
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateX(-180deg);
+    }
+
+    &:hover &__side--back {
+      transform: rotateX(0);
+    }
+  }
+
+  //FRONT SIDE STYLING
+  &__image {
+    display: block;
+    max-width: 200px;
+    max-height: auto;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+
+    @media (max-width: 1160px) {
+      max-width: 150px;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: $default-font-size;
+    text-align: center;
+    line-height: 1.2;
+    padding-bottom: 0.5rem;
+  }
+
+  &__course-name {
+    font-style: italic;
+  }
+
+  //REVERSE SIDE STYLING
+  &__visit {
+    flex: 0 1 60%;
+    background-color: $color-primary-dark;
+    color: $color-primary-highlight;
+    padding: 2rem 2rem;
+    border-radius: 0.5rem;
+    opacity: 0.9;
+    font-size: $default-font-size;
+    text-align: center;
+
+    a:link,
+    a:visited {
+      color: $color-primary-highlight;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary-highlight-hover;
+    }
+  }
+}

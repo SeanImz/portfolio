@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mudskipper_dev - Sean Evans' Portfolio</title>
+    <meta
+      name="description"
+      content="Mudskipper.dev - The Web Development Portfolio site for Sean Evans"
+    />
+    <meta
+      name="keywords"
+      content="sean, evans, web, developer, development, frontend, portolio, mudskipper, dev"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/2ab8dfac5f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="index.html">
+          <h1 class="header__title">Mudskipper_dev</h1>
+        </a>
+        <div class="header__contact">
+          <button class="btn btn-contact" id="contact">
+            Contact me
+            <!-- <a href="#" class="btn-contact__link">Contact me</a> -->
+          </button>
+          <!-- The Modal -->
+          <div id="contact-modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal__content">
+              <span class="modal__close">&times;</span>
+              <p>The best way to contact<br />me is by email:</p>
+              <p>
+                <a href="mailto:sean@mudskipper.dev">sean@mudskipper.dev</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <input id="toggle" type="checkbox"></input>
+
+        <label for="toggle" class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </label>
+
+        <div class="nav">
+  <div class="nav__wrapper">
+    <nav class="nav__menu">
+      <ul class="nav__menu__list">
+        <li class="nav__menu__item"><a href="#">Home</a></li>
+        <li class="nav__menu__item"><a href="#skills">Skills</a></li>
+        <li class="nav__menu__item"><a href="#projects">Projects</a></li>
+        <li class="nav__menu__item"><a href="#certs">Certs</a></li>
+      </ul>
+    </nav>
+  </div>
+        </div>
+
+        <section class="header__about-me">
+          <picture>
+            <img
+              class="header__photo"
+              src="img/my-photo.jpg"
+              alt="Photo of me, Sean Evans"
+            />
+          </picture>
+          <div class="header__about-me-text">
+            <p class="header__pre-subtitle">The portfolio site of</p>
+            <h2 class="header__subtitle">Sean Evans</h2>
+          </div>
+        </section>
+
+        <div class="header__icon-box">
+          <a href="https://www.linkedin.com/in/sean-evans-uk/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/SeanImz" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://twitter.com/DevMudskipper" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+ 
+        <section class="header__sections">
+          <div>
+            <ion-icon
+              class="header__sections-icons"
+              name="terminal-outline"
+            ></ion-icon>
+            <h3 class="header__sections-title">
+              <a href="#skills">Skills</a>
+            </h3>
+          </div>
+
+          <div>
+            <ion-icon
+              class="header__sections-icons"
+              name="desktop-outline"
+            ></ion-icon>
+            <h3 class="header__sections-title">
+              <a href="#projects">Projects</a>
+            </h3>
+          </div>
+
+          <div>
+            <ion-icon
+              class="header__sections-icons"
+              name="trophy-outline"
+            ></ion-icon>
+            <h3 class="header__sections-title">
+              <a href="#certs">Certifications</a>
+            </h3>
+          </div>
+        </section>
+
+        <section class="section-bio" id="bio">
+          <div class="section-bio__intro">
+            <p class="section-bio__statement">
+              I'm a career changer that worked for many years as a biologist and
+              research scientist before moving into a management job that
+              involved some web development.
+            </p>
+            <p class="section-bio__statement">
+              Now I've been bitten by the development bug, which has led me to
+              acquire many new skills; but I feel an unquenchable thirst to
+              learn more.
+            </p>
+            <p class="section-bio__statement">
+              I'm also an avid reader and book collector, nature lover, wildlife
+              photographer, rock music fan, greyhound walker, exotic gardener
+              and tropical fish enthusiast.
+            </p>
+          </div>
+        </section>
+        <aside class="section-bio__aside">
+          <header class="section-bio__aside__header">
+            <h3 class="section-bio__aside__title">
+              Why<br /><span class="">Mudskipper_dev</span>?
+            </h3>
+            <img
+              class="section-bio__aside__img"
+              src="img/mudskipper_small.jpg" alt="mudskipper fish"
+            />
+          </header>
+          <p class="section-bio__aside__text">
+            Mudskippers are fascinating fishes that live in the transitional
+            zone between land and water, and they are an important evolutionary
+            link between aquatic and terrestrial animals.
+          </p>
+          <p class="section-bio__aside__text">
+            As a biologist &quot;evolving&quot; into a web developer, they also
+            seemed like the perfect metaphor...
+          </p>
+          <p class="section-bio__aside__text">
+            Living in this transitional zone makes Mudskippers resilient and
+            adaptable - qualities I would like to emulate on my own transition
+            into coding!
+          </p>
+        </aside>
+      </header>
+
+      <section class="sections section-skills" id="skills">
+        <h2 class="sections__title">Skills</h2>
+        <main class="section-skills__contents">
+
+          <section class="section-skills__item-container section-skills__item-container-blank">
+           </section>
+
+          <section class="section-skills__item-container">
+           <div class="section-skills__item" onmouseover = "textSwap(titleHtml, textHtml)" onmouseout = "textDefault(textIntro)">
+            <img class="section-skills__image" src="img/html5.png" alt="HTML icon" />
+            </div>
+          </section>
+
+          <section class="section-skills__item-container">
+           <div class="section-skills__item" onmouseover = "textSwap(titleCss, textCss)" onmouseout = "textDefault(textIntro)">
+            <img class="section-skills__image" src="img/css3.png" alt="CSS icon" />
+           </div>
+          </section>
+
+          <section class="section-skills__item-container">
+           <div class="section-skills__item" onmouseover = "textSwap(titleSass, textSass)" onmouseout = "textDefault(textIntro)">
+            <img class="section-skills__image" src="img/sass.png" alt="SASS icon" />
+           </div>
+          </section>
+
+          <section class="section-skills__item-container">
+           <div class="section-skills__item" onmouseover = "textSwap(titleRwd, textRwd)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image section-skills__image-r" src="img/mudskipper-rwd.png" alt="Different size screens to demonstrate responsive layout" />
+           </div>
+          </section>
+
+          <section class="section-skills__item-container section-skills__item-container-blank">
+           </section>
+
+          <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleJs, textJs)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image section-skills__image-r" src="img/js-logo.png" alt="JavaScript icon" />
+            </div>
+          </section>
+
+          <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleAccess, textAccess)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image" src="img/accessibility-icon.png" alt="PHP icon" />  
+            </div>
+          </section>
+
+          <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleReact, textReact)" onmouseout = "textDefault(textIntro)">
+                <img class="section-skills__image" src="img/react-icon.webp" alt="React icon">
+            </div>
+          </section>
+          
+          <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleGit, textGit)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image" src="img/github.png" alt="GitHub icon">           
+            </div>
+          </section>
+
+          <section class="section-skills__item-container section-skills__item-container-blank">
+           </section>
+
+           <section class="section-skills__item-container">  
+            <div class="section-skills__item" onmouseover = "textSwap(titlePhp, textPhp)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image" src="img/php-logo.webp" alt="PHP icon" />
+            </div>
+          </section>
+
+          <section class="section-skills__item-container">  
+            <div class="section-skills__item" onmouseover = "textSwap(titleWordpress, textWordpress)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image" src="img/wordpress-logo.png" alt="WordPress icon" />
+            </div>
+          </section>
+
+          <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleMysql, textMysql)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image" src="img/mysql.webp" alt="MySQL icon" />
+            </div>
+          </section>            
+
+          <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleVsc, textVsc)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image" src="img/visual_studio_code.png" alt="Visual Studio Code icon" />
+            </div>
+          </section>
+
+          <section class="section-skills__item-container section-skills__item-container-blank">
+           </section>
+
+          <section class="section-skills__text-window-container">  
+            <div class="section-skills__text-window">
+              <h2 class="section-skills__title" id="title">Used on this website:</h2>
+              <p id="textWindow" class="section-skills__text">This portfolio is made with plain HTML, CSS (SCSS) and vanilla JavaScript. <br>No templates, frameworks or libraries have been used.</p>
+            </div>
+          </section>
+
+        </main>
+      </section>
+
+      <section class="sections section-projects" id="projects">
+        <h2 class="sections__title">Projects</h2>
+        <main class="section-projects__contents">
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-wharf.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Wharf Aquatics</h3>
+              <p class="section-projects__description">
+                My employer's website that I revamped with a more responsive
+                design a couple of years ago.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-3"
+            >
+              <a
+                href="https://www.wharfaquatics.co.uk"
+                class="section-projects__visit"
+              >
+                Visit website
+              </a>
+            </div>
+          </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-omnifood.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Omnifood</h3>
+              <p class="section-projects__description">
+                Modern, responsive website built as part of the
+                <span class="section-projects__course-name"
+                  >Build Responsive Real-World Websites</span
+                >
+                course.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-4"
+            >
+              <a
+                href="https://seanz-omnifood.netlify.app/"
+                class="section-projects__visit"
+              >
+                Visit website on Netlify
+              </a>
+            </div>
+          </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-natours.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Natours</h3>
+              <p class="section-projects__description">
+                Built as part of
+                <span class="section-projects__course-name"
+                  >Advanced CSS and SASS</span
+                >
+                course, using floats for legacy code understanding.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-5"
+            >
+              <a
+                href="https://seanz-natours.netlify.app/"
+                class="section-projects__visit"
+              >
+                Visit website on Netlify
+              </a>
+            </div>
+          </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-trillo.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Trillo</h3>
+              <p class="section-projects__description">
+                Holiday booking app frontpage built with Flexbox as part of
+                <span class="section-projects__course-name"
+                  >Advanced CSS and SASS</span
+                >
+                course.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-6"
+            >
+              <a
+                href="https://seanz-trillo.netlify.app/"
+                class="section-projects__visit"
+              >
+                Visit website on Netlify
+              </a>
+            </div>
+          </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-nexter.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Nexter</h3>
+              <p class="section-projects__description">
+                Built with CSS Grid as part of
+                <span class="section-projects__course-name"
+                  >Advanced CSS and SASS</span
+                >
+                course.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-7"
+            >
+              <a
+                href="https://seanz-nexter.netlify.app/"
+                class="section-projects__visit"
+              >
+                Visit website on Netlify
+              </a>
+            </div>
+          </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-escapes.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Clear View Escapes</h3>
+              <p class="section-projects__description">
+                Built as part of the
+                <span class="section-projects__course-name"
+                  >Git a Web Developer Job: Mastering the Modern Workflow</span
+                >
+                course.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-8"
+            >
+              <a
+                href="https://seanimz.github.io/travel-site/"
+                class="section-projects__visit"
+              >
+                Visit website on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-ttt.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">The Tropical Tank</h3>
+              <p class="section-projects__description">
+                My own hobbyist website, started back in 2000, and about to
+                undergo a major revamp.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-1"
+            >
+              <a
+                href="https://www.thetropicaltank.co.uk"
+                class="section-projects__visit"
+              >
+                Visit website
+              </a>
+            </div>
+          </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-polypterus.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Polypterus.info</h3>
+              <p class="section-projects__description">
+                Another hobbyist website built from scratch, about a very
+                special group of primitive fishes.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-2"
+            >
+              <a
+                href="https://www.polypterus.info"
+                class="section-projects__visit"
+              >
+                Visit website
+              </a>
+            </div>
+          </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-animated_template.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Animated Template</h3>
+              <p class="section-projects__description">
+                Animated Template page using Tailwind CSS, personalised with nature and gardening quotes!
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-9"
+            >
+              <a
+                href="projects/animated-template/index.html"
+                class="section-projects__visit"
+              >
+                See project
+              </a>
+            </div>
+          </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-light_dark_mode.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Light / Dark Mode</h3>
+              <p class="section-projects__description">
+                A switchable Light Mode / Dark Mode demo page.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-10"
+            >
+              <a
+                href="projects/light-dark-mode/index.html"
+                class="section-projects__visit"
+              >
+                See project
+              </a>
+            </div>
+          </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-quote_gen.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Quote Generator</h3>
+              <p class="section-projects__description">
+                A random quote generator, with the option to tweet the quote.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-11"
+            >
+              <a
+                href="projects/quote-gen/index.html"
+                class="section-projects__visit"
+              >
+                See project
+              </a>
+            </div>
+          </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-exotic-garden.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Exotic Garden UK</h3>
+              <p class="section-projects__description">
+                A WordPress website project.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-12"
+            >
+              <a
+                href="https://exoticgarden.uk"
+                class="section-projects__visit"
+              >
+                Visit website
+              </a>
+            </div>
+          </div>
+          
+          <!-- <div class="section-projects__item">
+          <div class="section-projects__item__side section-projects__item__side--front">
+            <img src="img/screenshot-garden.jpg" alt="Screenshot of React app" class="section-projects__image">
+            <h3 class="section-projects__title">
+              Greyhound Social Media App
+            </h3>
+            <p class="section-projects__description">
+              A social media app with chat feature, created with React.js.
+            </p>
+          </div>
+          <div class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-3">
+            <a href="https://greyhound-app.netlify.app/" class="section-projects__visit">
+              Visit website
+            </a>
+          </div>
+        </div> -->
+
+        </main>
+      </section>
+
+      <section class="sections section-certs" id="certs">
+        <h2 class="sections__title">Certifications</h2>
+
+        <main class="section-certs__contents">
+          <div class="section-certs__item">
+            <h3 class="section-certs__title">
+              Build Responsive Real-World Websites with HTML and CSS
+            </h3>
+            <p class="section-certs__description">
+              Responsive modern web design, with project build -
+              &quot;Omnifood&quot;.
+            </p>
+            <p class="section-certs__certificate">
+              Udemy Certificate of Completion
+            </p>
+            <p class="section-certs__date">Nov - Dec 2021</p>
+          </div>
+
+          <div class="section-certs__item">
+            <h3 class="section-certs__title">
+              Advanced CSS and SASS: Flexbox, Grid, Animations and more!
+            </h3>
+            <p class="section-certs__description">
+              Complete CSS and SASS/SCSS course, with 3 project builds -
+              &quot;Natours&quot;, &quot;Trillo&quot;, &quot;Nexter&quot;.
+            </p>
+            <p class="section-certs__certificate">
+              Udemy Certificate of Completion
+            </p>
+            <p class="section-certs__date">Dec 2021 - Jan 2022</p>
+          </div>
+
+          <div class="section-certs__item">
+            <h3 class="section-certs__title">
+              Git a Web Developer Job: Mastering the Modern Workflow
+            </h3>
+            <p class="section-certs__description">
+              Git/GitHub, NPM, Webpack, CSS architecture, with project build -
+              &quot;Clear View Escapes&quot;.
+            </p>
+            <p class="section-certs__certificate">
+              Udemy Certificate of Completion
+            </p>
+            <p class="section-certs__date">Jan 2022</p>
+          </div>
+
+          <div class="section-certs__item">
+            <h3 class="section-certs__title">Web Accessibility with the W3C</h3>
+            <p class="section-certs__description">
+              A unique course from the W3C Web Accessibility Initiative (WAI) in
+              cooperation with UNESCO.
+            </p>
+            <p class="section-certs__certificate">edX Verified Certificate</p>
+            <p class="section-certs__date">April 2022</p>
+          </div>
+
+          <div class="section-certs__item">
+            <h3 class="section-certs__title">
+              JavaScript Introduction with W3Cx
+            </h3>
+            <p class="section-certs__description">
+              Adding interactivity to HTML documents, API's, Structuring data,
+              Working with forms.
+            </p>
+            <p class="section-certs__certificate">edX Verified Certificate</p>
+            <p class="section-certs__date">Oct - Nov 2021</p>
+          </div>
+
+          <div class="section-certs__item">
+            <h3 class="section-certs__title">
+              The Complete JavaScript Course 2022: From Zero to Expert!
+            </h3>
+            <p class="section-certs__description">
+              Comprehensive modern JavaScript course with projects, challenges
+              and theory.
+            </p>
+            <p class="section-certs__certificate">Udemy</p>
+            <p class="section-certs__date">Feb 2022 - ongoing</p>
+          </div>
+
+          <div class="section-certs__item">
+            <h3 class="section-certs__title">
+              JavaScript Web Projects: 20 Projects to Build Your Portfolio
+            </h3>
+            <p class="section-certs__description">
+              Modern HTML5, CSS3, and JavaScript to build Responsive and Mobile
+              Friendly projects.
+            </p>
+            <p class="section-certs__certificate">Udemy</p>
+            <p class="section-certs__date">April 2022 - ongoing</p>
+          </div>
+
+          <div class="section-certs__item">
+            <h3 class="section-certs__title">
+              JavaScript Unit Testing - The Practical Guide.
+            </h3>
+            <p class="section-certs__description">
+              Writing automated tests (unit & integration tests) for JavaScript with Vitest & Jest.
+            </p>
+            <p class="section-certs__certificate">
+              Udemy Certificate of Completion
+            </p>
+            <p class="section-certs__date">May - June 2022</p>
+          </div>
+
+          <div class="section-certs__item">
+            <h3 class="section-certs__title">
+              WordPress for Beginners
+            </h3>
+            <p class="section-certs__description">
+              Creating a WordPress website step by step.
+            </p>
+            <p class="section-certs__certificate">
+              Udemy Certificate of Completion
+            </p>
+            <p class="section-certs__date">July 2022</p>
+          </div>
+
+          <div class="section-certs__item">
+            <h3 class="section-certs__title">
+              PHP for WordPress
+            </h3>
+            <p class="section-certs__description">
+              The basics of coding in PHP and making modifications in WordPress.
+            </p>
+            <p class="section-certs__certificate">
+              LinkedIn Learning Certificate
+            </p>
+            <p class="section-certs__date">July 2022</p>
+          </div>
+
+          <!-- <div class="section-certs__item">
+          <h3 class="section-certs__title">
+            Node.js, Express, MongoDB & More: The Complete Bootcamp 2022
+          </h3>
+          <p class="section-certs__description">Description of course</p>
+          <p class="section-certs__certificate">
+            Udemy Certificate of Completion
+          </p>
+          <p class="section-certs__date">May 2022</p>
+          </div> -->
+
+          <div class="section-certs__item">
+            <h3 class="section-certs__title">
+              MySQL For Beginners: Real Database Experience Real Fast
+            </h3>
+            <p class="section-certs__description">Designing and structuring a database,   queries, aggregate functions, CRUD actions, stored functions and procedures.</p>
+            <p class="section-certs__certificate">
+              Udemy Certificate of Completion
+            </p>
+            <p class="section-certs__date">August 2022</p>
+         </div>
+
+         <div class="section-certs__item">
+            <h3 class="section-certs__title">
+              React For The Rest Of Us
+            </h3>
+            <p class="section-certs__description">
+              React Basics and working with components, creating a real-world app.
+            </p>
+            <p class="section-certs__certificate">Udemy Certificate of Completion</p>
+            <p class="section-certs__date">August 2022</p>
+          </div>
+
+        </main>
+      </section>
+
+      <footer class="footer">
+        <p class="footer__text">
+          <a href="#">Mudskipper_dev</a> | Copyright &copy;2022 Sean Evans
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/contactModal.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <script src="js/skillsText.js"></script>
+    <!-- <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script> -->
+  </body>
+</html>

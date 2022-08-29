@@ -1,0 +1,30 @@
+// COLOURS
+$color-primary-light: #cfdbec;
+
+$color-primary-dark: #26364d;
+
+$color-primary-highlight: #7fffd4;
+$color-primary-highlight-hover: #bfffea;
+
+$color-secondary: #ff3300;
+
+$bgcolor-section: #dfe7f3;
+
+$bg-grey: #ebebeb;
+
+$background-gradient: linear-gradient(
+  to bottom right,
+  #26364d 10%,
+  #17202e 100%
+);
+
+$background-gradient2: linear-gradient(
+  to bottom right,
+  rgba(38, 54, 77, 0.8) 10%,
+  rgba(23, 32, 46, 0.8) 100%
+);
+
+$box-shadow-default: 0.4rem 0.4rem 0.8rem 0.2rem rgba(127, 255, 212, 0.5);
+
+//TYPOGRAPHY
+$default-font-size: 1.8rem;

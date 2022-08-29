@@ -1,0 +1,29 @@
+@mixin highlighted-link {
+  a:link,
+  a:visited {
+    color: $color-primary-highlight;
+  }
+
+  a:hover,
+  a:active {
+    color: $color-primary-highlight-hover;
+  }
+}
+
+// @mixin atLarge {
+//   @media (max-width: 1260px)
+// }
+
+@mixin mybackground {
+  background-image: $background-gradient2, url("../img/background-sm.webp");
+  background-size: cover;
+  position: relative;
+
+  @media (min-width: 960px) {
+    background-image: $background-gradient2, url("../img/background-med.webp");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: $background-gradient2, url("../img/background-lg.webp");
+  }
+}
