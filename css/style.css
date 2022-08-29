@@ -480,10 +480,22 @@ Animations
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 3.2rem; }
+  @media (min-width: 1680px) {
+    .section-skills__contents {
+      margin: 5rem 10rem; } }
   @media (max-width: 750px) {
     .section-skills__contents {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(12, 1fr); } }
+
+.section-skills__section-title {
+  color: #ff3300;
+  text-shadow: 2px 2px #000;
+  font-size: 4.8rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+  justify-items: center;
+  align-self: center; }
 
 .section-skills__text-window-container {
   grid-column: 2 / 6;
