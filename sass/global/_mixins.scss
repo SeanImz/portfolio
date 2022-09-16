@@ -14,16 +14,16 @@
 //   @media (max-width: 1260px)
 // }
 
-@mixin mybackground {
-  background-image: $background-gradient2, url("../img/background-sm.webp");
-  background-size: cover;
-  position: relative;
+// @mixin mybackground {
+//   background-image: $background-gradient2, url("../img/background-sm.webp");
+//   background-size: cover;
+//   position: relative;
 
-  @media (min-width: 960px) {
-    background-image: $background-gradient2, url("../img/background-med.webp");
-  }
+//   @media (min-width: 960px) {
+//     background-image: $background-gradient2, url("../img/background-med.webp");
+//   }
 
-  @media (min-width: 1920px) {
-    background-image: $background-gradient2, url("../img/background-lg.webp");
-  }
-}
+//   @media (min-width: 1920px) {
+//     background-image: $background-gradient2, url("../img/background-lg.webp");
+//   }
+// }

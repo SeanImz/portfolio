@@ -5,8 +5,9 @@
   gap: 1.6rem;
   height: 100vh;
   padding: 3rem;
+  background: $background-gradient;
 
-  @include mybackground;
+  // @include mybackground;
 
   @media (max-width: 1024px) and (orientation: landscape) {
     height: auto;
