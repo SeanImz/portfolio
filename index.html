@@ -22,9 +22,28 @@
   <body>
     <div class="container">
       <header class="header">
-        <a href="index.html">
-          <h1 class="header__title">Mudskipper_dev</h1>
-        </a>
+        <div class="header__left-column">     
+          <a href="index.html">
+            <h1 class="header__title">Mudskipper_dev</h1>
+          </a>
+        </div>
+        
+        
+
+        <section class="header__about-me">
+          <picture>
+            <img
+              class="header__photo"
+              src="img/my-photo.jpg"
+              alt="Photo of me, Sean Evans"
+            />
+          </picture>
+          <div class="header__about-me-text">
+            <p class="header__pre-subtitle">The portfolio site of</p>
+            <h2 class="header__subtitle">Sean Evans</h2>
+          </div>
+        </section>
+
         <div class="header__contact">
           <button class="btn btn-contact" id="contact">
             Contact me
@@ -64,20 +83,6 @@
           </div>
         </div>
 
-        <section class="header__about-me">
-          <picture>
-            <img
-              class="header__photo"
-              src="img/my-photo.jpg"
-              alt="Photo of me, Sean Evans"
-            />
-          </picture>
-          <div class="header__about-me-text">
-            <p class="header__pre-subtitle">The portfolio site of</p>
-            <h2 class="header__subtitle">Sean Evans</h2>
-          </div>
-        </section>
-
         <div class="header__icon-box">
           <a href="https://www.linkedin.com/in/sean-evans-uk/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
@@ -90,8 +95,7 @@
           </a>
         </div>
  
-        <section class="header__sections">
-          <div>
+          <div class="header__skills">
             <ion-icon
               class="header__sections-icons"
               name="terminal-outline"
@@ -101,7 +105,7 @@
             </h3>
           </div>
 
-          <div>
+          <div class="header__projects">
             <ion-icon
               class="header__sections-icons"
               name="desktop-outline"
@@ -111,7 +115,7 @@
             </h3>
           </div>
 
-          <div>
+          <div class="header__certs">
             <ion-icon
               class="header__sections-icons"
               name="trophy-outline"
@@ -120,7 +124,6 @@
               <a href="#certs">Certifications</a>
             </h3>
           </div>
-        </section>
       </header>
 
         <section class="sections section-bio" id="bio">
