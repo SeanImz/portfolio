@@ -22,13 +22,14 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="header__left-column">     
+        <div class="header__left-column">          
+        </div>
+
+        <div class="header__title-container">     
           <a href="index.html">
             <h1 class="header__title">Mudskipper_dev</h1>
           </a>
         </div>
-        
-        
 
         <section class="header__about-me">
           <picture>
@@ -44,9 +45,17 @@
           </div>
         </section>
 
+        <div class="header__about-bio">
+          <a href="#bio">
+            <button class="btn btn-contact" id="about">
+              About me        
+            </button>
+          </a>
+        </div>  
+
         <div class="header__contact">
           <button class="btn btn-contact" id="contact">
-            Contact me
+            Contact
             <!-- <a href="#" class="btn-contact__link">Contact me</a> -->
           </button>
           <!-- The Modal -->
@@ -54,7 +63,7 @@
             <!-- Modal content -->
             <div class="modal__content">
               <span class="modal__close">&times;</span>
-              <p>The best way to contact<br />me is by email:</p>
+              <p>The best way to contact me is by email:</p>
               <p>
                 <a href="mailto:sean@mudskipper.dev">sean@mudskipper.dev</a>
               </p>
@@ -96,7 +105,7 @@
           </a>
         </div>
  
-          <div class="header__skills">
+          <div class="header__sections header__skills">
             <ion-icon
               class="header__sections-icons"
               name="terminal-outline"
@@ -127,8 +136,9 @@
           </div>
       </header>
 
-        <section class="sections section-bio" id="bio">
+        <section class="sections section-bio" id="bio">         
           <main class="section-bio__contents">
+            <h2 class="sections__title">About Me</h2>
           <div class="section-bio__intro">
             <div class="section-bio__statement-container section-bio__container-1">
               <p class="section-bio__statement">
@@ -150,7 +160,7 @@
 
             <div class="section-bio__statement-container section-bio__container-3">
               <p class="section-bio__statement">
-              I'm seeking an opportunity to apply and expand my skills and experience in an environment that encourages individual contribution and growth to benefit the whole team.
+              I'm seeking an opportunity to apply and expand my skills and experience in an environment that encourages individual contribution and growth to benefit the whole team and organisation.
               </p>
             </div>
 
@@ -196,7 +206,8 @@
         <main class="section-skills__contents">
 
           <section class="section-skills__item-container">
-            <img class="section-skills__image" src="img/skills-text.png" alt="Skills graphic" />
+            <h2 class="sections__title">Skills</h2>
+            <!-- <img class="section-skills__image" src="img/skills-text.png" alt="Skills graphic" /> -->
            </section>
 
           <section class="section-skills__item-container">

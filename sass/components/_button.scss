@@ -3,8 +3,9 @@
   background-color: $color-primary-dark;
   border: none;
   border-radius: 0.5rem;
-  padding: 1rem;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  // box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: $box-shadow-dark;
 
   &__link:link,
   &__link:visited {

@@ -11,7 +11,7 @@
     //   gap: 2.4rem;
     // }
     @media (min-width: 1680px) {
-      margin: 5rem 10rem;
+      margin: 4rem 8rem;
     }
 
     @media (max-width: 750px) {
@@ -28,7 +28,7 @@
     position: relative;
 
     @media (max-width: 750px) {
-      grid-row: 1 / 2;
+      grid-row: 2 / 3;
     }
   }
 
@@ -95,13 +95,13 @@
 
   &__aside {
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     display: inline-block;
     margin: 3rem 1rem 0 0;
     padding: 1rem;
     border-radius: 10px;
     background: $background-gradient2;
-    box-shadow: 0.6rem 0.6rem 1rem 0.5rem rgba(127, 255, 212, 0.5);
+    box-shadow: $box-shadow-default;
 
     @media (max-width: 750px) {
       grid-column: 1 / 2;
