@@ -10,35 +10,36 @@
   height: 50vh; /* modal height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
   transition: all 0.3s;
 
-  @media (max-width: 1400px) {
-    width: 33vw;
-    right: 0;
+  @media (max-width: 1200px) {
+    width: 60vw;
   }
 
   @media (max-width: 1024px) {
-    width: 40vw;
+    width: 70vw;
+    left: 15%;
   }
 
   @media (max-width: 1024px) and (orientation: landscape) {
-    height: 50vh;
+    height: 85vh;
   }
 
   @media (max-width: 750px) {
-    width: 50vw;
+    width: 80vw;
+    left: 10%;
   }
 
   @media (max-width: 450px) {
     left: 1%;
     width: 98vw;
-    height: 35vh;
+    height: 40vh;
   }
 
   @media (max-width: 450px) and (orientation: landscape) {
     width: 100vw;
-    height: 60vh;
+    height: 85vh;
   }
 
   &__content {
@@ -47,19 +48,31 @@
     font-size: $larger-font-size;
     text-align: center;
     margin: auto;
-    padding: 30px;
+    padding: 6rem 3rem 3rem 3rem;
     border: 1px solid #888;
     width: 80%;
     height: 80%;
 
     @include highlighted-link;
+
+    @media (max-width: 1024px) and (orientation: landscape) {
+      font-size: $large-font-size;
+    }
+
+    @media (max-width: 400px) {
+      font-size: $large-font-size;
+    }
   }
 
   &__close {
     color: #aaaaaa;
-    float: right;
-    font-size: 3.2rem;
+    // float: right;
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    font-size: 4.8rem;
     font-weight: bold;
+    margin-left: 2rem;
 
     &:hover,
     &:focus {

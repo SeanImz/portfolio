@@ -205,18 +205,6 @@
     }
   }
 
-  // &__sections {
-  //   // display: flex;
-  //   // justify-content: space-around;
-  //   // align-items: start;
-
-  //   @media (max-width: 750px) {
-  //     flex-direction: column;
-  //     justify-content: space-around;
-  //     align-items: center;
-  //   }
-  // }
-
   &__skills {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
@@ -301,7 +289,6 @@
 
   &__sections-title {
     font-size: 5.6rem;
-    // text-shadow: 10px 10px 5px #336655;
     color: $color-primary-highlight;
     display: inline-block;
     transition: all 0.3s;
@@ -323,7 +310,7 @@
     &:active {
       color: $color-primary-highlight-hover;
       transform: translateY(-0.8rem) scale(1.05);
-      text-shadow: 10px 10px 5px $color-primary-highlight;
+      text-shadow: 10px 10px 5px #336655;
     }
   }
 }

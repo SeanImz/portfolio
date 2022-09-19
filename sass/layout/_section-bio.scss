@@ -132,8 +132,10 @@
     }
 
     &__icon {
-      max-width: 8rem;
-      max-height: 8rem;
+      max-width: 10rem;
+      min-width: 100px;
+      max-height: 10rem;
+      min-height: 100px;
     }
 
     &__text {

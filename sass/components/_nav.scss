@@ -13,6 +13,13 @@
   width: 5rem;
   height: 4.5rem;
   z-index: 999;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
 
   @media (max-width: 500px) {
     right: 2rem;
@@ -27,10 +34,6 @@
   background-color: #7fffd4;
   margin-top: 8px;
   transition: all 0.3s ease-in-out;
-
-  &:hover {
-    background-color: $color-primary-highlight-hover;
-  }
 
   @media (max-width: 500px) {
     width: 4rem;
