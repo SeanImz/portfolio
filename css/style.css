@@ -544,7 +544,7 @@ Animations
 
 .section-bio__arrow {
   position: absolute;
-  background-color: blueviolet;
+  background-color: #8a2be2;
   border-radius: 5px;
   width: 4rem;
   height: 9rem; }
@@ -666,7 +666,7 @@ Animations
       padding: 1rem; } }
 
 .section-skills__title {
-  color: #ff3300;
+  color: #8a2be2;
   font-size: 3.2rem;
   font-weight: 400;
   margin-bottom: 1.1rem;
@@ -864,12 +864,16 @@ Animations
       grid-template-rows: repeat(10, 1fr); } }
 
 .section-certs__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  padding: 2rem;
-  background: linear-gradient(to bottom right, rgba(38, 54, 77, 0.8) 10%, rgba(23, 32, 46, 0.8) 100%);
-  color: #cfdbec;
+  padding: 1rem;
+  background-color: #dfe7f3;
+  color: #26364d;
+  text-align: center;
   border-radius: 1rem;
-  box-shadow: 0.4rem 0.4rem 0.8rem 0.2rem rgba(127, 255, 212, 0.5);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
   transition: all 0.4s; }
   .section-certs__item:hover {
     transform: translateY(-1.2rem) scale(1.1);
@@ -877,16 +881,32 @@ Animations
 
 .section-certs__title {
   font-size: 2rem;
-  padding-bottom: 1rem; }
+  text-align: center;
+  margin-bottom: 1rem; }
 
 .section-certs__description, .section-certs__date {
   font-size: 1.8rem; }
 
 .section-certs__description {
   line-height: 1.2;
-  padding-bottom: 2rem; }
+  margin-bottom: 1rem; }
+
+.section-certs__cert-container {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  color: #26364d;
+  background-color: #dfe7f3;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 5px; }
+
+.section-certs__cert-logo {
+  display: inline;
+  height: 3rem;
+  width: auto;
+  margin-right: 1rem; }
 
 .section-certs__certificate {
   font-size: 1.8rem;
-  font-weight: 600;
-  padding-bottom: 1rem; }
+  font-weight: 600; }
