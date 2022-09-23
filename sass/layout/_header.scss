@@ -246,7 +246,8 @@
   }
 
   &__sections-icons {
-    color: $color-primary-highlight;
+    // color: $color-primary-highlight;
+    color: $color-secondary;
     width: 5rem;
     height: 5rem;
     margin-right: 1rem;
@@ -310,7 +311,8 @@
     &:active {
       color: $color-primary-highlight-hover;
       transform: translateY(-0.8rem) scale(1.05);
-      text-shadow: 10px 10px 5px #336655;
+      // text-shadow: 10px 10px 5px #336655;
+      text-shadow: 10px 10px 5px $color-secondary;
     }
   }
 }

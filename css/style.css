@@ -446,7 +446,7 @@ Animations
         grid-row: 8 / 9;
         justify-self: center; } }
   .header__sections-icons {
-    color: #7fffd4;
+    color: #8a2be2;
     width: 5rem;
     height: 5rem;
     margin-right: 1rem;
@@ -472,7 +472,7 @@ Animations
     .header__sections-title:hover, .header__sections-title:active {
       color: #bfffea;
       transform: translateY(-0.8rem) scale(1.05);
-      text-shadow: 10px 10px 5px #336655; }
+      text-shadow: 10px 10px 5px #8a2be2; }
 
 .footer {
   background-color: #777;
@@ -668,7 +668,7 @@ Animations
 .section-skills__title {
   color: #8a2be2;
   font-size: 3.2rem;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 1.1rem;
   opacity: 1; }
 
@@ -874,10 +874,29 @@ Animations
   text-align: center;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  position: relative;
   transition: all 0.4s; }
   .section-certs__item:hover {
     transform: translateY(-1.2rem) scale(1.1);
     box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.5); }
+
+.section-certs__edge {
+  position: absolute;
+  background-color: #8a2be2;
+  width: 3rem;
+  height: 3rem; }
+
+.section-certs__edge-1 {
+  left: 0;
+  top: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  border-radius: 1rem 0 0 0; }
+
+.section-certs__edge-2 {
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  border-radius: 0 0 1rem 0; }
 
 .section-certs__title {
   font-size: 2rem;
