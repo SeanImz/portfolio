@@ -635,6 +635,10 @@ Animations
       margin: 5rem 10rem; } }
   @media (max-width: 750px) {
     .section-skills__contents {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 1fr); } }
+  @media (max-width: 500px) {
+    .section-skills__contents {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(12, 1fr); } }
 
@@ -680,6 +684,10 @@ Animations
   display: flex;
   justify-content: center;
   align-content: center; }
+
+.section-skills__item-container-top-right {
+  justify-content: start;
+  align-content: end; }
 
 @media (max-width: 750px) {
   .section-skills__item-container-blank {

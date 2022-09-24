@@ -46,6 +46,10 @@ const textMysql =
   "I first wrote a database program in BASIC many years ago! Having now learnt the fundamentals of MySQL, I am currently using it to build a large database for use on one of my older websites, in order to create dynamic content to replace static pages.";
 const titleMysql = "MySQL";
 
+const textPs =
+  "I use Photoshop regularly for manipulating photos and other images, and for creating banners and other graphics.";
+const titlePs = "Photoshop";
+
 const textVsc =
   "I used to code solely in Notepad, but VSC has so many advantages, it's hard to imagine coding without it (or a similar editor) now!";
 const titleVsc = "Visual Studio Code";

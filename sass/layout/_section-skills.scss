@@ -15,6 +15,11 @@
     }
 
     @media (max-width: 750px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 1fr);
+    }
+
+    @media (max-width: 500px) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(12, 1fr);
     }
@@ -79,8 +84,13 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    // padding: 1rem;
     // border: solid 1px red;
+  }
+
+  &__item-container-top-right {
+    justify-content: start;
+    align-content: end;
+    // padding: 1rem;
   }
 
   &__item-container-blank {
