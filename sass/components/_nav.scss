@@ -47,11 +47,12 @@ Nav Styles
 .nav {
   position: fixed;
   width: 25vw;
-  height: 40vh;
+  // height: 40vh;
+  height: fit-content;
   background-color: $color-primary-dark;
   top: -100%;
   right: 0;
-  box-shadow: 0.4rem 0.4rem 0.8rem 0.2rem rgba(127, 255, 212, 0.5);
+  box-shadow: $box-shadow-default;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   transform: scale(0);

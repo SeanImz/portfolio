@@ -19,7 +19,7 @@ const textRwd =
 const titleRwd = "Responsive Web Design";
 
 const textJs =
-  "Having learnt the fundementals of JavaScript, I'm currently building smaller components and projects to reinforce these skills and apply them to real-world problems.";
+  "Having learnt the fundamentals of JavaScript, I'm currently building smaller components and projects to reinforce these skills and apply them to real-world problems.";
 const titleJs = "JavaScript";
 
 const textReact =
@@ -31,11 +31,11 @@ const textAccess =
 const titleAccess = "Accessibility";
 
 const textGit =
-  "I have familiarised myself with the fundementals of using Git for version control and collaboration, and pushing to GitHub to maintain a remote repository.";
+  "I have familiarised myself with the fundamentals of using Git for version control and collaboration, and pushing to GitHub to maintain a remote repository.";
 const titleGit = "Git / GitHub";
 
 const textPhp =
-  "I have learnt the fundementals of PHP, and I'm continuing my learning of this very widely used programming language.";
+  "I have learnt the fundamentals of PHP, and I'm continuing my learning of this very widely used programming language.";
 const titlePhp = "PHP";
 
 const textWordpress =
@@ -43,7 +43,7 @@ const textWordpress =
 const titleWordpress = "WordPress";
 
 const textMysql =
-  "I first wrote a database program in BASIC many years ago! Having now learnt the fundementals of MySQL, I am currently using it to build a large database for use on one of my older websites, in order to create dynamic content to replace static pages.";
+  "I first wrote a database program in BASIC many years ago! Having now learnt the fundamentals of MySQL, I am currently using it to build a large database for use on one of my older websites, in order to create dynamic content to replace static pages.";
 const titleMysql = "MySQL";
 
 const textVsc =
@@ -54,17 +54,11 @@ function textDefault(title, text) {
   document.getElementById("textWindow").style.transitionDuration = "0.75s";
   document.getElementById("textWindow").style.color = "#cfdbec";
   document.getElementById("title").style.opacity = "0.3";
-  // document.getElementById("title").innerHTML = title;
-  // document.getElementById("textWindow").innerHTML = text;
 }
 
 function textSwap(title, text) {
-  // document.getElementById("textWindow").style.opacity = "0";
-  // document.getElementById("textWindow").style.color = "#cfdbec";
   document.getElementById("textWindow").style.transition = "all 1.25s";
-  // document.getElementById("textWindow").style.transitionDuration = "1.5s";
   document.getElementById("title").style.opacity = "1";
-  // document.getElementById("textWindow").style.opacity = "1";
   document.getElementById("textWindow").style.color = "#26364d";
   document.getElementById("title").innerHTML = title;
   document.getElementById("textWindow").innerHTML = text;

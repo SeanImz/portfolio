@@ -159,11 +159,11 @@ Nav Styles
 .nav {
   position: fixed;
   width: 25vw;
-  height: 40vh;
+  height: fit-content;
   background-color: #26364d;
   top: -100%;
   right: 0;
-  box-shadow: 0.4rem 0.4rem 0.8rem 0.2rem rgba(127, 255, 212, 0.5);
+  box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem blueviolet;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   transform: scale(0);
@@ -566,7 +566,7 @@ Animations
   padding: 1rem;
   border-radius: 10px;
   background: linear-gradient(to bottom right, rgba(38, 54, 77, 0.8) 10%, rgba(23, 32, 46, 0.8) 100%);
-  box-shadow: 0.4rem 0.4rem 0.8rem 0.2rem rgba(127, 255, 212, 0.5); }
+  box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem blueviolet; }
   @media (max-width: 750px) {
     .section-bio__aside {
       grid-column: 1 / 2;
@@ -653,7 +653,7 @@ Animations
   margin: 5rem 10rem;
   padding: 5rem;
   border-radius: 20px;
-  box-shadow: 0.4rem 0.4rem 0.8rem 0.2rem rgba(127, 255, 212, 0.5); }
+  box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem blueviolet; }
   @media (max-width: 1050px) {
     .section-skills__text-window {
       height: 80%;
@@ -693,11 +693,14 @@ Animations
   font-size: 2.4rem;
   opacity: 0.8;
   margin: 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
   width: 85%;
   border-radius: 50%;
-  box-shadow: 0.4rem 0.4rem 0.8rem 0.2rem rgba(127, 255, 212, 0.5);
+  box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem blueviolet;
   transition: all 0.4s; }
+  @media (max-width: 1200px) {
+    .section-skills__item {
+      padding: 0.5rem; } }
   @media (max-width: 750px) {
     .section-skills__item {
       width: 50%; } }
@@ -752,7 +755,7 @@ Animations
     background: linear-gradient(to bottom right, rgba(38, 54, 77, 0.8) 10%, rgba(23, 32, 46, 0.8) 100%);
     color: #cfdbec;
     border-radius: 1rem;
-    box-shadow: 0.4rem 0.4rem 0.8rem 0.2rem rgba(127, 255, 212, 0.5);
+    box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem blueviolet;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
