@@ -105,13 +105,15 @@
         </div>
  
           <div class="header__skills">
-            <ion-icon
+            <!-- <ion-icon
               class="header__sections-icons"
               name="terminal-outline"
-            ></ion-icon>
-            <h3 class="header__sections-title">
-              <a href="#skills">Skills</a>
-            </h3>
+            ></ion-icon> -->
+            <div class="header__sections-title-container">
+              <h3 class="header__sections-title">
+                <a href="#skills">Skills</a>
+              </h3>
+            </div>
           </div>
 
           <div class="header__projects">
@@ -246,23 +248,8 @@
           </section>
 
           <section class="section-skills__item-container">
-           <div class="section-skills__item" onmouseover = "textSwap(titleRwd, textRwd)" onmouseout = "textDefault(textIntro)">
-              <img class="section-skills__image section-skills__image-r" src="img/mudskipper-rwd.png" alt="Different size screens to demonstrate responsive layout" />
-           </div>
-          </section>
-
-          <section class="section-skills__item-container section-skills__item-container-blank">
-          </section>
-
-          <section class="section-skills__item-container">
             <div class="section-skills__item" onmouseover = "textSwap(titleJs, textJs)" onmouseout = "textDefault(textIntro)">
               <img class="section-skills__image section-skills__image-r" src="img/js-logo.png" alt="JavaScript icon" />
-            </div>
-          </section>
-
-          <section class="section-skills__item-container">
-            <div class="section-skills__item" onmouseover = "textSwap(titleAccess, textAccess)" onmouseout = "textDefault(textIntro)">
-              <img class="section-skills__image" src="img/accessibility-icon.png" alt="Accessibility icon" />  
             </div>
           </section>
 
@@ -271,12 +258,45 @@
                 <img class="section-skills__image" src="img/react-icon.webp" alt="React icon">
             </div>
           </section>
-          
+
+          <section class="section-skills__item-container section-skills__item-container-blank">
+          </section>
+
           <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleRwd, textRwd)" onmouseout = "textDefault(textIntro)">
+               <img class="section-skills__image" src="img/mudskipper-rwd.png" alt="Different size screens to demonstrate responsive layout" />
+            </div>
+           </section>
+
+           <section class="section-skills__item-container">
             <div class="section-skills__item" onmouseover = "textSwap(titleGit, textGit)" onmouseout = "textDefault(textIntro)">
               <img class="section-skills__image" src="img/github.png" alt="GitHub icon">           
             </div>
           </section>
+
+          <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleAccess, textAccess)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image" src="img/accessibility-icon.png" alt="Accessibility icon" />  
+            </div>
+          </section>    
+          
+          <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleVsc, textVsc)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image" src="img/visual_studio_code.png" alt="Visual Studio Code icon" />
+            </div>
+          </section>
+          
+          <!-- <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleSoft, textSoft)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image" src="img/visual_studio_code.png" alt="Soft Skills icon" />  
+            </div>
+          </section>  -->        
+
+          <!-- <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleMore, textMore)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image" src="img/visual_studio_code.png" alt="More Skills icon" />  
+            </div>
+          </section> -->
 
           <section class="section-skills__item-container section-skills__item-container-blank">
            </section>
@@ -299,15 +319,15 @@
             </div>
           </section>            
 
-          <!-- <section class="section-skills__item-container">
-            <div class="section-skills__item" onmouseover = "textSwap(titleVsc, textVsc)" onmouseout = "textDefault(textIntro)">
-              <img class="section-skills__image" src="img/visual_studio_code.png" alt="Visual Studio Code icon" />
-            </div>
-          </section> -->
-
           <section class="section-skills__item-container">
             <div class="section-skills__item" onmouseover = "textSwap(titlePs, textPs)" onmouseout = "textDefault(textIntro)">
               <img class="section-skills__image" src="img/photoshop-icon.png" alt="Photoshop icon" />
+            </div>
+          </section>
+
+          <section class="section-skills__item-container">
+            <div class="section-skills__item" onmouseover = "textSwap(titleDigMarket, textDigMarket)" onmouseout = "textDefault(textIntro)">
+              <img class="section-skills__image section-skills__image-r" src="img/digital-marketing-icon.png" alt="Digital Marketing icon" />  
             </div>
           </section>
 
@@ -660,6 +680,7 @@
 
         </main>
       </section>
+      
 
       <section class="sections section-certs" id="certs">
         <h2 class="sections__title">Certifications</h2>
@@ -908,9 +929,12 @@
       </section>
 
       <footer class="footer">
-        <p class="footer__text">
-          <a href="#">Mudskipper_dev</a> | Copyright &copy;2022 Sean Evans
-        </p>
+        <hr class="footer__page-rule">
+        <div class="footer__container">
+          <p class="footer__text">
+            <a href="#">Mudskipper_dev</a> | Copyright &copy;2022 Sean Evans
+          </p>
+        </div>
       </footer>
     </div>
 

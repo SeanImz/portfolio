@@ -5,7 +5,8 @@
   gap: 1.6rem;
   height: 100vh;
   padding: 3rem;
-  background: $background-gradient;
+  // background: $background-gradient;
+  background-color: $bgcolor-main;
 
   // @include mybackground;
 
@@ -205,11 +206,18 @@
     }
   }
 
+  &__sections-title-container {
+    background-image: $background-gradient3;
+    padding: 4rem;
+    border-radius: 50%;
+  }
+
   &__skills {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     justify-self: center;
     align-self: center;
+    padding: 3rem;
 
     @media (max-width: 750px) {
       grid-column: 1 / 1;

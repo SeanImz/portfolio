@@ -1,11 +1,21 @@
 .footer {
-  background-color: #777;
-  padding: 3rem;
-}
+  background-color: $bgcolor-main;
 
-.footer__text {
-  font-size: $default-font-size;
-  text-align: center;
+  &__page-rule {
+    background-color: $color-secondary;
+    height: 3px;
+    border: 0;
+  }
 
-  @include highlighted-link;
+  &__container {
+    padding: 3rem;
+  }
+
+  &__text {
+    color: $color-primary-light;
+    font-size: $default-font-size;
+    text-align: center;
+
+    @include highlighted-link;
+  }
 }

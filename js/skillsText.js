@@ -50,6 +50,10 @@ const textPs =
   "I use Photoshop regularly for manipulating photos and other images, and for creating banners and other graphics.";
 const titlePs = "Photoshop";
 
+const textDigMarket =
+  "A website or app isn't much good if nobody finds or uses it. Digital marketing is about making sure users and potential customers can find the website, and analysing how they interact with it, to see where improvements can be made.";
+const titleDigMarket = "Digital Marketing";
+
 const textVsc =
   "I used to code solely in Notepad, but VSC has so many advantages, it's hard to imagine coding without it (or a similar editor) now!";
 const titleVsc = "Visual Studio Code";
