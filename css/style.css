@@ -252,24 +252,28 @@ Animations
   @media (max-width: 1024px) and (orientation: landscape) {
     .sections {
       height: auto; } }
+  .sections__title-container {
+    display: flex; }
+  .sections__title-icon {
+    color: #8a2be2;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+    display: inline-block; }
+    @media (max-width: 900px) {
+      .sections__title-icon {
+        width: 4rem;
+        height: 4rem; } }
   .sections__title {
     color: #cfdbec;
-    font-size: 3.2rem;
+    font-size: 4.8rem;
     text-shadow: 0.2rem 0.2rem 0.5rem rgba(255, 255, 255, 0.5);
-    padding-bottom: 2.4rem; }
-  .sections__subtitle {
-    color: #cfdbec;
-    font-size: 2.4rem; }
-  .sections__page-rule {
-    background-color: #8a2be2;
-    height: 1px;
-    width: 96%;
-    margin: 0 auto; }
+    padding-bottom: 2rem; }
 
 .header {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1.5fr;
-  grid-template-rows: 1fr 2fr 1.2fr 1.2fr 1fr;
+  grid-template-rows: 1fr 1.8fr 1.2fr 1.2fr 1fr;
   gap: 1.6rem;
   height: 100vh;
   padding: 3rem;
@@ -421,24 +425,24 @@ Animations
         margin-bottom: 1rem; } }
   .header__sections-title-container {
     background-image: radial-gradient(ellipse, rgba(138, 43, 226, 0.9), #000);
-    padding: 4rem;
+    padding: 5rem;
     border-radius: 50%; }
   .header__skills {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     justify-self: center;
-    align-self: center;
-    padding: 3rem; }
+    align-self: end; }
     @media (max-width: 750px) {
       .header__skills {
         grid-column: 1 / 1;
-        grid-row: 6 / 7; } }
+        grid-row: 6 / 7;
+        align-self: center; } }
   .header__projects {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
     justify-self: center;
-    align-self: top;
-    margin: 2% 0 0 -25%; }
+    align-self: center;
+    margin: 0 0 0 -25%; }
     @media (max-width: 750px) {
       .header__projects {
         grid-column: 1 / 1;
@@ -455,16 +459,6 @@ Animations
         grid-column: 1 / 1;
         grid-row: 8 / 9;
         justify-self: center; } }
-  .header__sections-icons {
-    color: #8a2be2;
-    width: 5rem;
-    height: 5rem;
-    margin-right: 1rem;
-    display: inline-block; }
-    @media (max-width: 900px) {
-      .header__sections-icons {
-        width: 4rem;
-        height: 4rem; } }
   .header__sections-title {
     font-size: 5.6rem;
     color: #7fffd4;

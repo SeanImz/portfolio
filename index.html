@@ -105,35 +105,27 @@
         </div>
  
           <div class="header__skills">
-            <!-- <ion-icon
-              class="header__sections-icons"
-              name="terminal-outline"
-            ></ion-icon> -->
             <div class="header__sections-title-container">
               <h3 class="header__sections-title">
-                <a href="#skills">Skills</a>
+                <a href="#skills">&nbsp;Skills&nbsp;</a>
               </h3>
             </div>
           </div>
 
           <div class="header__projects">
-            <ion-icon
-              class="header__sections-icons"
-              name="desktop-outline"
-            ></ion-icon>
-            <h3 class="header__sections-title">
-              <a href="#projects">Projects</a>
-            </h3>
+            <div class="header__sections-title-container">
+              <h3 class="header__sections-title">
+                <a href="#projects">Projects</a>
+              </h3>
+            </div>
           </div>
 
           <div class="header__certs">
-            <ion-icon
-              class="header__sections-icons"
-              name="trophy-outline"
-            ></ion-icon>
-            <h3 class="header__sections-title">
-              <a href="#certs">Certifications</a>
-            </h3>
+            <div class="header__sections-title-container">
+              <h3 class="header__sections-title">
+                <a href="#certs">Certifications</a>
+              </h3>
+            </div>
           </div>
       </header>
 
@@ -223,9 +215,15 @@
       
 
       <section class="sections section-skills" id="skills">
-        <h2 class="sections__title">Skills</h2>
-        <main class="section-skills__contents">
+        <div class="sections__title-container">
+          <ion-icon
+              class="sections__title-icon"
+              name="terminal-outline"
+            ></ion-icon>
+          <h2 class="sections__title">Skills</h2>
+        </div>
 
+        <main class="section-skills__contents">
           <section class="section-skills__item-container section-skills__item-container-blank">
           </section>
 
@@ -345,7 +343,14 @@
       </section>
 
       <section class="sections section-projects" id="projects">
-        <h2 class="sections__title">Projects</h2>
+        <div class="sections__title-container">
+          <ion-icon
+              class="sections__title-icon"
+              name="desktop-outline"
+            ></ion-icon>
+          <h2 class="sections__title">Projects</h2>
+        </div>
+        
         <main class="section-projects__contents">
           <div class="section-projects__item">
             <div
@@ -683,10 +688,15 @@
       
 
       <section class="sections section-certs" id="certs">
-        <h2 class="sections__title">Certifications</h2>
+        <div class="sections__title-container">
+          <ion-icon
+              class="sections__title-icon"
+              name="trophy-outline"
+            ></ion-icon>
+          <h2 class="sections__title">Certifications</h2>
+        </div>
 
         <main class="section-certs__contents">
-
           <div class="section-certs__item">
             <div class="section-certs__edge section-certs__edge-1"></div>
             <div class="section-certs__title">

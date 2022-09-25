@@ -1,7 +1,7 @@
 .header {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1.5fr;
-  grid-template-rows: 1fr 2fr 1.2fr 1.2fr 1fr;
+  grid-template-rows: 1fr 1.8fr 1.2fr 1.2fr 1fr;
   gap: 1.6rem;
   height: 100vh;
   padding: 3rem;
@@ -208,7 +208,7 @@
 
   &__sections-title-container {
     background-image: $background-gradient3;
-    padding: 4rem;
+    padding: 5rem;
     border-radius: 50%;
   }
 
@@ -216,12 +216,13 @@
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     justify-self: center;
-    align-self: center;
-    padding: 3rem;
+    align-self: end;
+    // padding: 3rem;
 
     @media (max-width: 750px) {
       grid-column: 1 / 1;
       grid-row: 6 / 7;
+      align-self: center;
     }
   }
 
@@ -229,8 +230,8 @@
     grid-column: 3 / 4;
     grid-row: 3 / 4;
     justify-self: center;
-    align-self: top;
-    margin: 2% 0 0 -25%;
+    align-self: center;
+    margin: 0 0 0 -25%;
 
     @media (max-width: 750px) {
       grid-column: 1 / 1;
@@ -250,20 +251,6 @@
       grid-column: 1 / 1;
       grid-row: 8 / 9;
       justify-self: center;
-    }
-  }
-
-  &__sections-icons {
-    // color: $color-primary-highlight;
-    color: $color-secondary;
-    width: 5rem;
-    height: 5rem;
-    margin-right: 1rem;
-    display: inline-block;
-
-    @media (max-width: 900px) {
-      width: 4rem;
-      height: 4rem;
     }
   }
 
