@@ -58,6 +58,18 @@ const textVsc =
   "I used to code solely in Notepad, but VSC has so many advantages, it's hard to imagine coding without it (or a similar editor) now!";
 const titleVsc = "Visual Studio Code";
 
+const textUx =
+  "User Experience is all about making sure users of your website or app find it intuitive and easy to use.";
+const titleUx = "User Experience (UX)";
+
+const textSoft =
+  "So-called Soft Skills are just as vital as technical skills in the workplace, and I have been able to hone important skills such as communication, teamwork and analytical skills in my various job roles.";
+const titleSoft = "Soft Skills";
+
+const textOther =
+  "I also have some knowledge or experience of a number of other tools, including NPM, Jira, Slack, Agile Development Practices and MS Office.";
+const titleOther = "Other Skills";
+
 function textDefault(title, text) {
   document.getElementById("textWindow").style.transitionDuration = "0.75s";
   document.getElementById("textWindow").style.color = "#cfdbec";

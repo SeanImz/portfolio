@@ -296,6 +296,7 @@ Animations
     grid-row: 1 / 6;
     width: 70%;
     margin: 0 auto;
+    padding-bottom: 1rem;
     border-radius: 20px; }
     @media (max-width: 1000px) {
       .header__left-column {
@@ -417,7 +418,8 @@ Animations
     border-radius: 0.5rem;
     padding: 1rem 1.6rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
-    background-color: #26364d; }
+    background-color: #26364d;
+    margin-bottom: 1rem; }
     @media (max-width: 750px) {
       .header__icon-box {
         grid-column: 1 / 1;
@@ -476,7 +478,7 @@ Animations
     .header__sections-title:hover, .header__sections-title:active {
       color: #bfffea;
       transform: translateY(-0.8rem) scale(1.05);
-      text-shadow: 10px 10px 5px #8a2be2; }
+      text-shadow: 10px 10px 5px #000; }
 
 .footer {
   background-color: #111822; }
