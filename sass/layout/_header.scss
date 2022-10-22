@@ -195,12 +195,6 @@
     background-color: $color-primary-dark;
     margin-bottom: 1rem;
 
-    // @media (max-width: 900px) {
-    //   grid-column: 2 / 3;
-    //   grid-row: 1 / 3;
-    //   align-self: end;
-    // }
-
     @media (max-width: 750px) {
       grid-column: 1 / 1;
       grid-row: 5 / 6;
@@ -273,14 +267,14 @@
     a:link,
     a:visited {
       color: $color-primary-highlight;
+      text-shadow: 10px 10px 5px #000;
     }
 
     &:hover,
     &:active {
       color: $color-primary-highlight-hover;
       transform: translateY(-0.8rem) scale(1.05);
-      // text-shadow: 10px 10px 5px $color-secondary;
-      text-shadow: 10px 10px 5px #000;
+      // text-shadow: 20px 20px 10px #000;
     }
   }
 }

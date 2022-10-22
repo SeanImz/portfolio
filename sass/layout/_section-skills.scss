@@ -84,7 +84,6 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    // border: solid 1px red;
   }
 
   &__item-container-blank {
@@ -97,7 +96,8 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: $bgcolor-section;
+    // background-color: $bgcolor-section;
+    background-color: #ffffff;
     font-size: 2.4rem;
     opacity: 0.8;
     margin: 1rem;

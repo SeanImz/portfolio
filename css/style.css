@@ -474,11 +474,11 @@ Animations
         margin-top: 1rem; } }
     .header__sections-title a:link,
     .header__sections-title a:visited {
-      color: #7fffd4; }
+      color: #7fffd4;
+      text-shadow: 10px 10px 5px #000; }
     .header__sections-title:hover, .header__sections-title:active {
       color: #bfffea;
-      transform: translateY(-0.8rem) scale(1.05);
-      text-shadow: 10px 10px 5px #000; }
+      transform: translateY(-0.8rem) scale(1.05); }
 
 .footer {
   background-color: #111822; }
@@ -704,7 +704,7 @@ Animations
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: #dfe7f3;
+  background-color: #ffffff;
   font-size: 2.4rem;
   opacity: 0.8;
   margin: 1rem;

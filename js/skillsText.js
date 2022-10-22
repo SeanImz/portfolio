@@ -67,8 +67,8 @@ const textSoft =
 const titleSoft = "Soft Skills";
 
 const textOther =
-  "I also have some knowledge or experience of a number of other tools, including NPM, Jira, Slack, Agile Development Practices and MS Office.";
-const titleOther = "Other Skills";
+  "I also have some knowledge or experience of a number of other tools, including NPM, Command Line Interface, Jira, Slack, Agile Development Practices and MS Office.";
+const titleOther = "Other Web Dev Skills";
 
 function textDefault(title, text) {
   document.getElementById("textWindow").style.transitionDuration = "0.75s";
