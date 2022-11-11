@@ -654,6 +654,7 @@ Animations
       grid-template-rows: repeat(14, 1fr); } }
 
 .section-skills__text-window-container {
+  margin: 0 auto;
   grid-column: 2 / 7;
   grid-row: 2 / 4;
   display: flex; }
@@ -811,7 +812,7 @@ Animations
       .section-projects__item__side--back-10 {
         background-image: url(../img/screenshot-light_dark_mode.jpg); }
       .section-projects__item__side--back-11 {
-        background-image: url(../img/screenshot-quote_gen.jpg); }
+        background-image: url(../img/screenshot-allotments.jpg); }
       .section-projects__item__side--back-12 {
         background-image: url(../img/screenshot-exotic-garden.jpg); }
   .section-projects__item:hover .section-projects__item__side--front {

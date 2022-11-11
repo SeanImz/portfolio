@@ -36,6 +36,8 @@
   // }
 
   &__text-window-container {
+    // width: 98%;
+    margin: 0 auto;
     grid-column: 2 / 7;
     grid-row: 2 / 4;
     display: flex;
