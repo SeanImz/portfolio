@@ -152,7 +152,7 @@
 
             <div class="section-bio__statement-container section-bio__container-3">
               <p class="section-bio__statement">
-              I'm seeking an opportunity to apply and expand my skills and experience in an environment that encourages individual contribution and growth to benefit the whole team and organisation.
+              I've now found an opportunity to apply and expand my skills and experience in an environment that encourages individual contribution and growth to benefit the whole team and organisation.
               </p>
             </div>
 
@@ -984,7 +984,7 @@
         <hr class="footer__page-rule">
         <div class="footer__container">
           <p class="footer__text">
-            <a href="#">Mudskipper_dev</a> | Copyright &copy;2022 Sean Evans
+            <a href="#">Mudskipper_dev</a> | Copyright &copy;2022-<span id="year"></span> Sean Evans
           </p>
         </div>
       </footer>
@@ -994,6 +994,9 @@
     <script src="js/navModal.js"></script>
     <script src="js/smoothScroll.js"></script>
     <script src="js/skillsText.js"></script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

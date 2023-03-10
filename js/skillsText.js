@@ -59,7 +59,7 @@ const textVsc =
 const titleVsc = "Visual Studio Code";
 
 const textUx =
-  "User Experience is all about making sure users of your website or app find it intuitive and easy to use.";
+  "User Experience is all about making sure users of your website or app find it intuitive and easy to use. I've been following Chris Nodder's excellent UX courses on LinkedIn to learn more about concepts like Analysing User Data, Ideation and Prototyping.";
 const titleUx = "User Experience (UX)";
 
 const textSoft =
