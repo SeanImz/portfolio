@@ -35,4 +35,16 @@
     text-shadow: $text-shadow-light;
     padding-bottom: 2rem;
   }
+
+  &__linebreak {
+    display: none;
+
+    @media (min-width: 1280px) {
+      display: block;
+      background-color: $color-primary-light;
+      margin-bottom: 2rem;
+      height: 0.1px;
+      border: 0;
+    }
+  }
 }

@@ -269,6 +269,15 @@ Animations
     font-size: 4.8rem;
     text-shadow: 0.2rem 0.2rem 0.5rem rgba(255, 255, 255, 0.5);
     padding-bottom: 2rem; }
+  .sections__linebreak {
+    display: none; }
+    @media (min-width: 1280px) {
+      .sections__linebreak {
+        display: block;
+        background-color: #cfdbec;
+        margin-bottom: 2rem;
+        height: 0.1px;
+        border: 0; } }
 
 .header {
   display: grid;
