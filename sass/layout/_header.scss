@@ -267,14 +267,14 @@
     a:link,
     a:visited {
       color: $color-primary-highlight;
-      text-shadow: 10px 10px 5px #000;
+      text-shadow: 5px 5px 3px #000;
     }
 
     &:hover,
     &:active {
       color: $color-primary-highlight-hover;
       transform: translateY(-0.8rem) scale(1.05);
-      // text-shadow: 20px 20px 10px #000;
+      text-shadow: 20px 20px 10px #000;
     }
   }
 }

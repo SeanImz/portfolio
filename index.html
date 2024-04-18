@@ -12,6 +12,14 @@
       name="keywords"
       content="sean, evans, web, developer, development, frontend, portolio, mudskipper, dev"
     />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9G9MDYL4BS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9G9MDYL4BS');
+    </script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/2ab8dfac5f.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/favicon.png" />
@@ -275,8 +283,6 @@
             </div>
           </section>
 
-           
-
           <section class="section-skills__item-container">
             <div class="section-skills__item" onmouseover = "textSwap(titleAccess, textAccess)" onmouseout = "textDefault(textIntro)">
               <img class="section-skills__image" src="img/accessibility-icon.png" alt="Accessibility icon" />  
@@ -352,32 +358,6 @@
         </div>
         
         <main class="section-projects__contents">
-          <div class="section-projects__item">
-            <div
-              class="section-projects__item__side section-projects__item__side--front"
-            >
-              <img
-                src="img/screenshot-wharf.jpg"
-                alt="Screenshot of website"
-                class="section-projects__image"
-              />
-              <h3 class="section-projects__title">Wharf Aquatics</h3>
-              <p class="section-projects__description">
-                My previous employer's website that I revamped with a more responsive
-                design in 2019.
-              </p>
-            </div>
-            <div
-              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-3"
-            >
-              <a
-                href="https://www.wharfaquatics.co.uk"
-                class="section-projects__visit"
-              >
-                Visit website
-              </a>
-            </div>
-          </div>
 
           <div class="section-projects__item">
             <div
@@ -691,6 +671,32 @@
               </a>
             </div>
           </div>
+
+          <div class="section-projects__item">
+            <div
+              class="section-projects__item__side section-projects__item__side--front"
+            >
+              <img
+                src="img/screenshot-wharf.jpg"
+                alt="Screenshot of website"
+                class="section-projects__image"
+              />
+              <h3 class="section-projects__title">Wharf Aquatics</h3>
+              <p class="section-projects__description">
+                My previous employer's website that I maintained for several years before converting it to Shopify.
+              </p>
+            </div>
+            <div
+              class="section-projects__item__side section-projects__item__side--back section-projects__item__side--back-3"
+            >
+              <a
+                href="https://www.wharfaquatics.co.uk"
+                class="section-projects__visit"
+              >
+                Visit website
+              </a>
+            </div>
+          </div>
           
           <!-- <div class="section-projects__item">
           <div class="section-projects__item__side section-projects__item__side--front">
@@ -915,7 +921,7 @@
             <div class="section-certs__title">
               <h3>MySQL For Beginners:<br>Real Database Experience Real Fast</h3>
             </div>
-            <p class="section-certs__description">Designing and structuring a database, queries, aggregate functions, CRUD actions, stored functions and procedures.</p>
+            <p class="section-certs__description">Designing and structuring a database, queries, CRUD actions, stored functions and procedures.</p>
             <div class="section-certs__cert-container">
               <img class="section-certs__cert-logo" src="img/logo-udemy.svg" alt="Udemy logo" />
               <span class="section-certs__certificate">
@@ -977,6 +983,60 @@
               </span>
             </div>
             <p class="section-certs__date">October 2022</p>
+            <div class="section-certs__edge section-certs__edge-2"></div>
+          </div>
+
+          <div class="section-certs__item">
+            <div class="section-certs__edge section-certs__edge-1"></div>
+            <div class="section-certs__title">
+              <h3>Planning and Releasing Software with Jira</h3>
+            </div>
+            <p class="section-certs__description">
+              Using Jira Software with Confluence and Bitbucket to support the software development life cycle.
+            </p>
+            <div class="section-certs__cert-container">
+              <img class="section-certs__cert-logo" src="img/logo-linkedin.webp" alt="Udemy logo" />
+              <span class="section-certs__certificate">
+                LinkedIn Learning Certificate
+              </span>
+            </div>
+            <p class="section-certs__date">November 2022</p>
+            <div class="section-certs__edge section-certs__edge-2"></div>
+          </div>
+
+          <div class="section-certs__item">
+            <div class="section-certs__edge section-certs__edge-1"></div>
+            <div class="section-certs__title">
+              <h3>Skills Development Bootcamp in Web Development</h3>
+            </div>
+            <p class="section-certs__description">
+              Intensive bootcamp course: programming in JavaScript plus HTML, CSS, React and Node.
+            </p>
+            <div class="section-certs__cert-container">
+              <img class="section-certs__cert-logo" src="img/UoN-HD-logos.jpg" alt="University of Nottingham and HyoerionDev logos" />
+              <span class="section-certs__certificate">
+                University of Nottingham / Hyperion Dev
+              </span>
+            </div>
+            <p class="section-certs__date">Nov 2022 - Feb 2023</p>
+            <div class="section-certs__edge section-certs__edge-2"></div>
+          </div>
+
+          <div class="section-certs__item">
+            <div class="section-certs__edge section-certs__edge-1"></div>
+            <div class="section-certs__title">
+              <h3>APIs and Web Services</h3>
+            </div>
+            <p class="section-certs__description">
+              Creating and using RESTful APIs, SOAP web services, APIs with GraphQL.
+            </p>
+            <div class="section-certs__cert-container">
+              <img class="section-certs__cert-logo" src="img/logo-linkedin.webp" alt="Udemy logo" />
+              <span class="section-certs__certificate">
+                LinkedIn Learning Certificate
+              </span>
+            </div>
+            <p class="section-certs__date">January 2024</p>
             <div class="section-certs__edge section-certs__edge-2"></div>
           </div>
 
