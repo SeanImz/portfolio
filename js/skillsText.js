@@ -1,6 +1,5 @@
 const textIntro =
-  "This portfolio is made with plain HTML, CSS (SCSS) and vanilla JavaScript. No templates, frameworks or libraries have been used.";
-const titleIntro = "Used on this website:";
+  "Hover over any of the Skills icons to see more details about how I've used each of them in my work and projects.";
 
 const textHtml =
   "I like to write clear, well-structured, semantic HTML. This makes the code easier to understand for other developers, more easily interpreted by both browsers and search engines, and better for accessibility.";
@@ -19,7 +18,7 @@ const textRwd =
 const titleRwd = "Responsive Web Design";
 
 const textJs =
-  "Having learnt the fundamentals of JavaScript, I'm currently building smaller components and projects to reinforce these skills and apply them to real-world problems.";
+  "Having learnt the fundamentals of JavaScript, I've continued to build components and projects to reinforce these skills and apply them to real-world problems.";
 const titleJs = "JavaScript";
 
 const textReact =
@@ -72,8 +71,8 @@ const titleOther = "Other Web Dev Skills";
 
 function textDefault(title, text) {
   document.getElementById("textWindow").style.transitionDuration = "0.75s";
-  document.getElementById("textWindow").style.color = "#cfdbec";
-  document.getElementById("title").style.opacity = "0.3";
+  document.getElementById("title").innerHTML = "";
+  document.getElementById("textWindow").innerHTML = textIntro;
 }
 
 function textSwap(title, text) {
