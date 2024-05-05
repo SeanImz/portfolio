@@ -1,5 +1,5 @@
 const textIntro =
-  "Hover over any of the Skills icons to see more details about how I've used each of them in my work and projects.";
+  "Hover over any of the Skills icons to see more details about how I've used each of them in my work and projects. <br><br>This portfolio was built with plain HTML, CSS (SCSS) and vanilla JavaScript. <br>No templates, frameworks or libraries have been used.";
 
 const textHtml =
   "I like to write clear, well-structured, semantic HTML. This makes the code easier to understand for other developers, more easily interpreted by both browsers and search engines, and better for accessibility.";

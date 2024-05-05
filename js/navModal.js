@@ -1,11 +1,11 @@
-// Get the modal
-var nav = document.getElementsByClassName("nav");
+// Get the nav modal
+var nav = document.getElementById("nav");
 
 // // Get the button that opens the modal
 // var btn = document.getElementById("contact");
 
 // Get the <span> element that closes the modal
-var toggle = document.getElementById("toggle")[0];
+var toggle = document.getElementById("toggle");
 
 nav.style.display = "block";
 
@@ -27,8 +27,8 @@ nav.style.display = "block";
 // };
 
 //When user clicks Esc key, close modal
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape") {
-    nav.style.display = "none";
-  }
-});
+// document.addEventListener("keydown", function (event) {
+//   if (event.key === "Escape") {
+//     nav.style.display = "none";
+//   }
+// });

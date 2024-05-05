@@ -98,6 +98,10 @@
     background: $background-gradient2;
     box-shadow: $box-shadow-default;
 
+    &:hover {
+      box-shadow: $box-shadow-secondary;
+    }
+
     @media (max-width: 750px) {
       grid-column: 1 / 2;
       grid-row: 4 / 5;

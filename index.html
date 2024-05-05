@@ -60,15 +60,14 @@
           </a>
         </div>  
 
-        <input id="toggle" type="checkbox"></input>
-
+        <input type="checkbox" id="toggle" tabindex="0"></input>
         <label for="toggle" class="hamburger">
           <div class="top-bun"></div>
           <div class="meat"></div>
           <div class="bottom-bun"></div>
         </label>
 
-        <div class="nav">
+        <div class="nav" id="nav">
           <div class="nav__wrapper">
             <nav class="nav__menu">
               <ul class="nav__menu__list">
@@ -160,7 +159,7 @@
 
             <div class="section-bio__statement-container section-bio__container-3">
               <p class="section-bio__statement">
-              I've now found an opportunity to apply and expand my skills and experience in an environment that encourages individual contribution and growth to benefit the whole team and organisation.
+              I've now found an opportunity to apply and expand my skills and experience in a full time web developer role within the Higher Education sector.
               </p>
             </div>
 
@@ -187,8 +186,7 @@
             </header>
             <p class="section-bio__aside__text">
               I'm also an avid reader and book collector, nature lover, wildlife
-              photographer, rock music fan, greyhound walker, exotic gardener
-              and tropical fish enthusiast.
+              photographer, rock music fan, greyhound walker, and tropical-style gardener.
             </p>
           </aside>
         
@@ -236,7 +234,7 @@
           </section>
 
           <section class="section-skills__item-container">
-           <div class="section-skills__item" onmouseover = "textSwap(titleHtml, textHtml)" onmouseout = "textDefault(textIntro)">
+           <div class="section-skills__item" onmouseover = "textSwap(titleHtml, textHtml)" onmouseout = "textDefault(textIntro)" tabindex="0">
             <img class="section-skills__image" src="img/html5.png" alt="HTML icon" />
             </div>
           </section>
@@ -340,7 +338,7 @@
           <section class="section-skills__text-window-container">  
             <div class="section-skills__text-window">
               <h2 class="section-skills__title" id="title">Used on this website:</h2>
-              <p id="textWindow" class="section-skills__text">This portfolio is made with plain HTML, CSS (SCSS) and vanilla JavaScript. <br>No templates, frameworks or libraries have been used.</p>
+              <p id="textWindow" class="section-skills__text">This portfolio was built with plain HTML, CSS (SCSS) and vanilla JavaScript. <br>No templates, frameworks or libraries have been used.</p>
             </div>
           </section>
 
